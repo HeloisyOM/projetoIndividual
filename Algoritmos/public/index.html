@@ -1,73 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+     <link rel="icon" href="../public/assets/icon-nami.ico" type="image/x-icon">
+
+                
+    <link rel="stylesheet" href="styles/style.css">
     <title>Home</title>
 </head>
-<style>
-   body{
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   }
-   #div_container-banner{
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url('https://images.alphacoders.com/790/thumb-1920-790813.jpg');    
-        width: 100%;
-    height: 900px;
-    background-size: cover   
-}
-   nav{
-}
-ul{
-    display: flex;
-    
-       justify-content: flex-end;
-     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    list-style-type: none;
-    
-}
 
-   li a{
-    
-    margin: 0;
-    text-decoration: none;
-   }
-   li:not(.li-img){
-    padding-top: 16px;
-   }
-</style>
 <body>
-    <div id="div_container-banner">
+    <header>
+        <div id="div_titulo">
+            <a href="index.html">Comunidade de Springfield</a>
+        </div>
+
         <nav>
-
-       <ul>
-        <li>                    
-            <img src="/home/izy/Documents/projetoIndividual/projetoIndividual/Algoritmos/public/assets/icon-nami.png" width=100 alt="">
-            </li>
-            <li>
-                     <a href="#">Quem eu sou?</a>
-
-                     
-                    </li>
-                </li>
-    
-                <a href="#">Minha Conexão</a>
+            <ul>
                 <li>
-                    <li>
-
-                        <a href="#">Cadastre-se </a>|<a href="#"> Login</a>
-                    </li>
-       </ul>
-
-                
-                
-                
+                    <a href=pontosTuristicos.html>Pontos Turisticos </a>
+                </li>
+                <li>
+                    <a href="origem.html">Origem</a>
+                </li>
+                 <li>
+                    <a href="personagens.html">Personagens Principais</a>
+                </li>
+                <li>
+                    <a href="cadastro.html">Cadastro | </a><a href="login.html">Login</a>
+                </li>
+            </ul>
         </nav>
-    </div>
+        
+    </header>
+        
+    <main>
+        <div id="container-conteudo">
+
+            <div id="container-fotos-home">
+                <img src="assets/placa-bemvindo.png" alt="Bem-Vindo a Springfield" id="img-bem-vindo">
+                <img src="assets/foto-cidadoesSimpsons2.jpeg" alt="Foto com muitos cidadãos de Springfield" id="img-cidadaos">
+            </div>
+
+            <section class="introducao">
+                <p>Hey! Bem-vindo a Comunidade de Springfield! </p>
+                <h3>
+                    Um lugar que reúne as melhores pessoas do mundo: os fãs dos Simpsons!
+                    <br><br>
+                    O quê? 
+                    <br><br>
+                    Você ainda não conhece essa turma? Então você não sabe o que está perdendo!
+                    <br><br>
+                    Clique abaixo e descubra mais sobre esse universo amarelo — conheça os personagens que marcaram gerações, a história por trás da série e os lugares mais icônicos de Springfield!
+                </h3>
+            </section>
+        </div>
+    </main>
+
 </body>
 </html> 
