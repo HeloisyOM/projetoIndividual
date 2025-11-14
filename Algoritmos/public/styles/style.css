@@ -1,43 +1,31 @@
-@import url('https://fonts.cdnfonts.com/css/simpsonfont');
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Fjord+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Fira+Mono:wght@400;500;700&family=Fjord+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Fira+Mono:wght@400;500;700&family=Fjord+One&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Fira+Mono:wght@400;500;700&family=Fjord+One&family=Hind:wght@300;400;500;600;700&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: 'Fira Mono', sans-serif;
+    font-family: "Hind", sans-serif;
 }
 
 body {
-    min-height: 100vh;/*altura minima da tela*/
-    background-image: url('../assets/background.png');/*iamgem de fundo*/
-    background-size: cover;/*para que a imagem de fundo não se repita*/
-    margin: 0;/*zerando a margem*/
-    padding: 0;/*zerando o padding*/
+    min-height: 100vh;
+    /*altura minima da tela*/
+    background-image: url('../assets/background.png');
+    /*iamgem de fundo*/
+    background-size: cover;
+    /*para que a imagem de fundo não se repita*/
+    margin: 0;
+    /*zerando a margem*/
+    padding: 0;
+    /*zerando o padding*/
 }
 
-#div_titulo {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 2%;
-}
-
-#div_titulo a {
-    font-size:4.5vw; /* vh equivale a 1% do tamanho da tela (viwer point)*/
-    color: #F05E2F;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
 
 nav {
-    background-color: #FEDD25;
     height: 70px;
-    width: 85%;
+    width: 100%;
     border-radius: 10px;
     margin: auto;
-    margin-top: 3vh;
+    padding-top: 1vh;
 }
 
 nav ul {
@@ -47,78 +35,177 @@ nav ul {
     padding: 15px;
 }
 
-nav a { 
+nav a {
     font-size: 20px;
-    color: white;
-    font-weight: 800;
+    color: #F05E2F;
+    font-weight: 700;
     text-decoration: none;
 }
 
 main {
     display: flex;
+    flex-direction: column;
+}
+
+#div_banner {
+    display: flex;
+    border-bottom: 10px solid #c5c5c5;
+
+}
+
+#div_titulo {
+    padding: 10vh;
+    margin-top: 15vh;
+
+}
+
+#div_titulo h1,
+h3 {
+    margin: 0;
+}
+
+#div_titulo h1 {
+    font-size: 10vh;
+    letter-spacing: 1px;
+    color: #4957B3;
+    line-height: 11vh;
+    font-family: "Mochiy Pop P One", sans-serif;
+    ;
+}
+
+#div_titulo h3 {
+    font-size: 3vh;
+    color: #F05E2F;
+    padding-top: 2vh;
+    padding-bottom: 0;
+}
+
+#div_img #img-banner {
+    padding-top: 16vh;
+    width: 65vh;
+}
+
+#sobreNos {
+    display: flex;
+    padding: 4%;
+    justify-content: space-around;
+}
+
+#sobreNos .div_texto {
+    text-align: end;
+}
+
+#sobreNos .div_texto h1 {
+    color: #F05E2F;
+}
+
+.div_texto h1 {
+    font-size: 7vh;
+    font-family: "Mochiy Pop P One", sans-serif;
+    margin-top: 0;
+
+}
+#sobreNos h3{
+    width: 100vh;
+}
+#origem .div_texto h1 {
+    color: #4957B3;
+}
+
+.div_texto h3 {
+    color: #1e1e1e;
+    font-size: 3vh;
+    font-weight: normal;
+}
+
+#origem h3{
+    width: 40vh;
+}
+#origem .div_texto {
+    text-align: start;
+}
+
+#origem {
+    display: flex;
+    border-top: #F05E2F 10px solid;
+    gap: 20vh;
+    border-bottom: #c5c5c5 10px solid;
+    padding-bottom: 4%;
+}
+
+#origem h1 {
+    color: #4957B3;
+}
+
+#origem h3 {
+    width: 70vh;
+}
+
+#origem .div_texto {
+    padding-left: 9%;
+}
+
+#origem .div_texto {
+    padding-top: 4%;
+}
+
+#origem #div_img {
+    padding-top: 10%;
+}
+
+#div_img img {
+    width: 55%;
+}
+
+#div_img #img-simpAtual {
+    width: 60%;
+}
+
+#personagem .div_texto h1 {
+    color: #F05E2F;
+}
+
+
+#div_cards {
+    display: flex;
+    gap: 8vh;
     align-items: center;
     justify-content: center;
 }
 
-#container-conteudo {
-    width: 85%;
-    height: 100vh;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 0 15px rgba(218, 238, 247, 0.8);
-    margin-top: 1%;
-}
-
-#container-fotos-home{
+.card {
+    width: 30vh;
+    height: 30vh;
+    background-color: #1e1e1e;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6vh;
-    padding-top: 5vh;
-}
-#img-bem-vindo {
-    width: 35vw;
-    height: auto;
-    border-radius: 10px;
-}
-#img-cidadaos {
-    width: 33.5vw;
-    height: auto;
-    border-radius: 10px;
 }
 
-.introducao{
-    display: flex;/*torna o container flexivel*/
-    align-items: center;/*centraliza*/
-    justify-content: center;/*centraliza*/
-    flex-direction: column;
-     /* tamanho da fonte*/
+#div_cards .card1 {
+    background-color: #66AEDF;
 }
 
-.introducao p{
-    font-size: 2vh;
-    text-shadow: #FEDD25;
-    border-right: 4px solid #F05E2F;/* borda na direita que vai servir como cursor*/
-    width: 43ch; /*quantidade de caracteres da frase*/
-    white-space: nowrap;/* é para a animação pular os espaços em branco*/
-    overflow: hidden; /* é usado para esconder as outras letras até a animação de escrever mostre*/
-    animation: escrevendo 4s steps(43) /*vai escrever cada caracter em etapas diferentes*/,
-    piscando 0.5s infinite step-end alternate /*vai iniciar uma animação depois da outra*/;
+#div_cards .card2 {
+    background-color: #BCE542;
 }
 
-@keyframes escrevendo{
-    from{
-        width: 0; /* percorre todo a frase desde o caracter 0*/
-    }
-}
-@keyframes piscando{
-    50%{
-        border-color: transparent;/* vai ficar transparente para simular o cursor piscando*/
-    }
+#div_cards .card3 {
+    background-color: #F05E2F;
 }
 
-.introducao h3{
-    font-size: 2.5vh;
-    font-weight: normal;
-    width: 112vh;
+#div_cards .card4 {
+    background-color: #A569BD;
+}
+
+#div_cards .card5 {
+    background-color: #70D1F4;
+}
+
+#personagem  .div_texto {
+    text-align: end;
+}
+
+#personagem h3{
+    width:50%;
 }

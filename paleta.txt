@@ -22,3 +22,33 @@ caramelo:
                 </li>
 
                     box-shadow: 0px 3px 5px 4px rgba(0, 0, 0, 0.2);   
+
+
+
+.card{
+    width: 30vh;
+    height: 30vh;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div_cards .card1{
+    background-color: #66AEDF;
+}
+#div_cards .card2{
+    background-color: #BCE542;
+}
+
+#div_cards .card3{
+    background-color: #F05E2F;
+}
+
+#div_cards .card4{
+    background-color: #A569BD;
+}
+
+#div_cards .card5{
+    background-color: #70D1F4   ;
+}
+
