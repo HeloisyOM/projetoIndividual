@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="icon" href="../public/assets/icon-nami.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cadLogin.css">
+
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href=index.html>Home</a>
+                </li>
+                <li>
+                    <a href=index.html#sobreNos>Sobre o projeto</a>
+                </li>
+                <li>
+                    <a href="index.html#origem">Origem</a>
+                </li>
+                <li>
+                    <a href="index.html#personagem">Personagens</a>
+                </li>
+                <li>
+                    <a href=jornal.html>Jornal da Cidade</a>
+                </li>
+                <li>
+                    <a href="cadastro.html">Cadastro | </a><a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div id="div_conteudo-cadastro">
+
+            <div id="cadastro-p1">
+
+                
+
+                    <div class="div_campo">
+                        <h3>Nome:</h3>
+                        <input type="text" id="input_nome" class="campo">
+                    </div>
+
+                    <div class="div_campo">
+                        <h3>Gênero:</h3>
+                        <select id="select_genero" class="campo">
+                            <option disabled selected value"#">Selecione uma opção</option>
+                            <option value="F">Feminino</option>
+                            <option value="M">Masculino</option>
+                            <option value="O">Outros</option>
+                        </select>
+                    </div>
+                    <div class="div_campo">
+
+                        <h3>Data de Nascimento:</h3>
+                        <input type="text" id="input_dtNasc"class="campo">
+                    </div>
+
+                    <div class="div_campo">
+                        <h3>E-mail:</h3>
+                        <input type="text" id="input_email"class="campo">
+                    </div>
+
+                    <div class="div_campo">
+                        <h3>Senha</h3>
+                        <input type="text" id="input_senha"class="campo">
+                    </div>
+
+                    <div class="div_campo">
+                        <h3>Confirme a sua senha</h3>
+                        <input type="text" id="input_confirmacaoSenha"class="campo">
+                    </div>
+
+                    <div class="div_btn">
+                        <button onclick="cadastrar()">Cadastrar</button>
+                    </div>
+
+
+                </div>
+
+
+
+            <div id="cadastro-p2" style="display:none;">
+                aa
+            </div>
+        </div>
+
+    </main>
+
+   
+
+</body>
+
+</html>

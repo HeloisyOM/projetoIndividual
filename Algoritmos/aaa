@@ -1,0 +1,22 @@
+
+                <div id="div_lugar-p1">
+                    <img src="./assets/barMoe.png" alt="">
+                    <p>O Bar do Moe é o point decadente onde Homer afoga as mágoas e Moe reclama da vida.</p>
+                </div>
+                <div class="div_lugar">
+                    <img src="./assets/casaSimp.png" alt="">
+                    <p>A casa dos Simpsons é o lar caótico e acolhedor onde tudo dá errado, mas a família sempre dá um jeito.</p>
+                </div><div class="div_lugar">
+                    <img src="./assets/usina.png" alt="">
+                    <p>A usina de Springfield é o lugar radioativo onde Homer trabalha fingindo que sabe o que está fazendo.</p>
+                </div>
+                  <div class="div_lugar">
+                    <img src="./assets/krusty.png" alt="">
+                    <p>O Krusty Burger é a lanchonete duvidosa onde o sabor é inseguro, mas a clientela sempre volta.</p>
+                </div>
+            </div>
+
+                <div id="div_lugar-p2">
+
+                
+            </div>
